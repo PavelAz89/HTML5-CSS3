@@ -218,3 +218,200 @@
     color: #445161;
     margin: 0 0 0 0;
 }
+
+/*Блок №5 Reviews*/
+.reviews {
+    margin: 50px 0 0 0;
+}
+.reviews:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.reviews-title {
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 0 45px 0;
+}
+.reviews-item {
+    width: 48%;
+    float: left;
+}
+.reviews-item-userpic {
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-color: #445161;
+    border-radius: 50%;
+    float: left;
+}
+.reviews-item-content {
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+}
+.reviews-item-text {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+}
+
+.reviews-item-user a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #989898;
+}
+
+/*Блок №6 Цены*/
+.prices {
+    padding: 50px 145px 50px 145px;
+}
+/*
+.prices:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+*/
+.prices-title {
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    display: block;
+    text-align: center;
+}
+.prices-blocks {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.prices-box {
+    width: 300px;
+    background-color: #445161;
+    padding-bottom: 20px;
+    border-radius: 10px;
+/*    float: left;*/
+    margin: 0 15px 0 15px;
+}
+.prices-box-title {
+    display: block;
+    text-align: center;
+    padding: 16px 0 16px 0;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+.prices-box-price {
+    display: block;
+    text-align: center;
+    width: 296px;
+    background-color: #ffffff;
+    font-family: Arial;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445162;
+    padding: 18px 0 18px 0;
+    margin: 0 auto;  
+}
+.prices-box-list {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.prices-box-button {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    text-transform: uppercase;
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 23px;
+}
+/*Блок №7 Подвал*/
+.maim-footer {
+    width: 100%;
+    background-color: #445161;
+}
+.maim-footer-title {
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.maim-footer-button {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
