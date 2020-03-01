@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
    <div class="container">
@@ -25,8 +26,8 @@
     <section class="about-product padding-site">
           <div class="about-product-wrp">
             <span class="about-product-title">About your product</span>
-            <p class="about-product-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut accusantium, earum accusamus iure enim quos recusandae, quod libero maiores soluta nobis, incidunt quidem sint ullam consectetur magni quaerat? Delectus, quod.</p>
-            <p class="about-product-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptas, in, aut corporis, eius deleniti aliquam eveniet architecto, unde consequuntur accusamus amet. Commodi totam soluta quos illo debitis, id suscipit?</p>
+            <p class="about-product-txt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut accusantium, earum accusamus iure enim quos recusandae, quod libero maiores soluta nobis, incidunt quidem sint ullam consectetur magni quaerat? Delectus, quod.</p>
+            <p class="about-product-txt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptas, in, aut corporis, eius deleniti aliquam eveniet architecto, unde consequuntur accusamus amet. Commodi totam soluta quos illo debitis, id suscipit?</p>
           </div>
           <video class="about-product-video"  src="#" width="300" height="200"></video>
         </section>
@@ -51,9 +52,7 @@
             <figure class="screenshots-figure">
                 <img class="screenshots-figure-logo" src="#" alt="скриншот" width="200" height="150">
                 <figcaption class="screenshots-figcaption">
-                    <h3 class="screenshots-figcaption-h3">
-                        The description for the image
-                    </h3>
+                    <h3 class="screenshots-figcaption-h3">The description for the image</h3>
                     <p class="screenshots-figcaption-content">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deleniti sit, eaque architecto, magnam, harum consequatur odio eos a possimus eveniet quis! Possimus suscipit voluptatum, sapiente voluptates amet sint ut.
                     </p>
@@ -104,7 +103,8 @@
            <p class="reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nisi quod vitae. 
             Saepe nam, magni quibusdam dignissimos recusandae hic alias labore obcaecati! Nisi consequuntur 
             culpa cum expedita pariatur eveniet facere.</p>
-           <p class="reviews-item-user"><a href="#">Lourens S.</a></p></div>
+           <a class="reviews-item-user" href="#">Lourens S.</a>
+           </div>
         </div>
         <div class="reviews-item">
           <img class="reviews-item-userpic" src="#" alt="аватарка" width="75" height="75">
@@ -112,7 +112,7 @@
            <p class="reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nisi quod vitae. 
             Saepe nam, magni quibusdam dignissimos recusandae hic alias labore obcaecati! Nisi consequuntur 
             culpa cum expedita pariatur eveniet facere.</p>
-           <p class="reviews-item-user"><a href="#">Lourens S.</a></p></div>
+           <a class="reviews-item-user" href="#">Lourens S.</a></div>
         </div>
         <div class="reviews-item">
           <img class="reviews-item-userpic" src="#" alt="аватарка" width="75" height="75">
@@ -120,7 +120,7 @@
            <p class="reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nisi quod vitae. 
             Saepe nam, magni quibusdam dignissimos recusandae hic alias labore obcaecati! Nisi consequuntur 
             culpa cum expedita pariatur eveniet facere.</p>
-           <p class="reviews-item-user"><a href="#">Lourens S.</a></p></div>
+           <a class="reviews-item-user" href="#">Lourens S.</a></div>
         </div>
         <div class="reviews-item">
           <img class="reviews-item-userpic" src="#" alt="аватарка" width="75" height="75">
@@ -128,7 +128,7 @@
            <p class="reviews-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nisi quod vitae. 
             Saepe nam, magni quibusdam dignissimos recusandae hic alias labore obcaecati! Nisi consequuntur 
             culpa cum expedita pariatur eveniet facere.</p>
-           <p class="reviews-item-user"><a href="#">Lourens S.</a></p></div>
+           <a class="reviews-item-user" href="#">Lourens S.</a></div>
         </div>
     </section>
 <!--      Блок №6 Цены-->
@@ -182,24 +182,36 @@
         </section>
         </div>
     </section>
-<!--      Блок №7 Подвал-->
-      <footer class="maim-footer">
-      <h2 class="maim-footer-title">Contacts</h2>
-      <section class="maim-footer-contacts">
-       <form class="main-footer-form" action="#">
-           <input class="name" type="text" placeholder="Your name:">
-           <input class="email" type="text" placeholder="Your email:">
-           <textarea name="message" id="#" cols="30" rows="10">Your message:</textarea>
-       </form>
-       <button class="maim-footer-button">buy</button>        
-      </section>
-      <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio laborum nihil iure voluptates ut hic? Eos aperiam, enim nam quae earum provident possimus, ducimus commodi eum veniam, facere sunt culpa?</p>
-      </section>
+  </main>  
+  <!--      Блок №7 Подвал-->
+      <footer class="footer">
+          <section class="main-footer">
+            <h2 class="main-footer-title">Contacts</h2>
+<!--
+            <div class="main-footer-block">
+              <section class="main-footer-contacts">
+-->
+               <form class="main-footer-form" action="#">
+                   <input class="name" type="text" placeholder="Your name:">
+                   <input class="email" type="email" placeholder="Your email:">
+                   <textarea class="message" placeholder="Your message:"></textarea>
+                   <input class="button" type="submit" value="send">
+               </form>
+<!--             </section>-->
+             <section class="main-footer-content">
+                 <span class="main-footer-content-skype">here_your_login_skype</span>
+                 <span class="main-footer-content-icq">279679659</span>
+                 <span class="main-footer-content-email">psdhtmlcss@mail.ru</span>
+                 <span class="main-footer-content-phone">80 00 4568 55 55</span>
+                 <div class="socials">
+                 <a class="socials-link" href="#">Social icons</a>
+                 </div>
+             </section>
+<!--            </div>  -->
+          </section>
+      
+      <p class="copyright">Copyright &copy; 2014 Product name - PSD HTML CSS</p>
     </footer>
-       
-        
-       </main>  
   </div> 
 </body>
 </html>

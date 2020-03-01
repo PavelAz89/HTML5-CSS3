@@ -99,6 +99,12 @@
   width: 649px;
   float: left;
 }
+.about-product-txt-1 {
+    margin: 0 0 16px 0;
+}
+.about-product-txt-2 {
+    margin: 0 0 0 0;
+}
 .about-product-video {
     display: block;
     width: 430px;
@@ -141,23 +147,14 @@
   float: left;
  }
 
-/*
-.dignity-list:nth-child(3){
-  float: right;
-}
-*/
-
 .dignity-list-item {
   margin: 0 0 40px 0;
   position: relative;
 }
 
-/*
-.dignity-list:nth-child(2) > .dignity-list-item:nth-child(3),
-.dignity-list:nth-child(3) > .dignity-list-item:nth-child(3) {
-  margin: 0;
+.dignity-list-item:nth-child(3) {
+    margin: 0;
 }
-*/
 
 .dignity-list-item:before {
   content: "+";
@@ -192,7 +189,10 @@
 }
 .screenshots-figure {
     width: 50%;
-    margin: 0 0 0 0;
+    margin: 0 0 15px 0;
+}
+.screenshots-figure:nth-child(3), .screenshots-figure:nth-child(4) {
+    margin: 0;
 }
 
 /*
@@ -205,9 +205,10 @@
     display: block;
     background-color: #445161;
     float: left;
+    margin-right: 10px;
 }
 .screenshots-figcaption {
-    padding: 5px 10px 5px 10px;
+    padding: 0;
     overflow: hidden;
 }
 .screenshots-figcaption-h3 {
@@ -216,12 +217,16 @@
     line-height: 30px;
     font-weight: 400;
     color: #445161;
-    margin: 0 0 0 0;
+    margin: 0 0 5px 0;
+}
+
+.screenshots-figcaption-content {
+    margin: 0;
 }
 
 /*Блок №5 Reviews*/
 .reviews {
-    margin: 50px 0 0 0;
+    margin: 0;
 }
 .reviews:after {
   content: "";
@@ -242,7 +247,26 @@
 .reviews-item {
     width: 48%;
     float: left;
+/*    position: relative;*/
 }
+/*
+.reviews-item:before {
+  content: "";
+  display: block;
+  border: 15px solid transparent; 
+  border-right: 15px solid #ccc;
+  position: absolute;
+  top: 10px;
+  left: -30px
+}
+*/
+.reviews-item:nth-child(2), .reviews-item:nth-child(4) {
+    margin-right: 15px;
+}
+.reviews-item:nth-child(4), .reviews-item:nth-child(5) {
+    padding-top: 15px;
+}
+
 .reviews-item-userpic {
     width: 75px;
     height: 75px;
@@ -250,11 +274,28 @@
     background-color: #445161;
     border-radius: 50%;
     float: left;
+    margin-right: 18px;
 }
 .reviews-item-content {
-    overflow: hidden;
-    padding: 0 15px 0 15px;
+/*    overflow: hidden;*/
+    padding: 0 15px 0 20px;
+/*    background-color: #ebebeb;*/
+    border-radius: 5px;
+    position: relative;
+    margin-left: 75px;
+    }
+
+
+.reviews-item-content:before {
+  content: "";
+  display: block;
+  border: 15px solid transparent; 
+  border-right: 15px solid #ebebeb;
+  position: absolute;
+  top: 10px;
+  left: -10px;
 }
+
 .reviews-item-text {
     font-family: Arial;
     font-size: 14px;
@@ -262,29 +303,27 @@
     font-weight: 400;
     font-style: italic;
     color: #333333;
+    margin: 0;
+    background-color: #ebebeb;
+    padding: 15px 0 5px 15px;
 }
 
-.reviews-item-user a {
+.reviews-item-user {
     text-decoration: none;
     font-family: Arial;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #989898;
-}
+    background-color: #ebebeb;
+    display: block;
+    padding: 10px 0 5px 15px;
+ }
 
 /*Блок №6 Цены*/
 .prices {
     padding: 50px 145px 50px 145px;
 }
-/*
-.prices:after {
-  content: "";
-  display: block;
-  width: 100%;
-  clear: both;
-}
-*/
 .prices-title {
     font-family: Arial;
     font-size: 30px;
@@ -293,6 +332,7 @@
     color: #445161;
     display: block;
     text-align: center;
+    margin-top: 0;
 }
 .prices-blocks {
     width: 100%;
@@ -337,6 +377,7 @@
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
+    list-style-position: inside;
 }
 .prices-box-button {
     font-family: Arial;
@@ -350,34 +391,152 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 23px;
+    outline: none;
+}
+.prices-box-button:hover {
+    background-color: yellow;
+}
+.prices-box-button:active {
+    background-color: green;
+    outline: none;
 }
 /*Блок №7 Подвал*/
-.maim-footer {
-    width: 100%;
+
+
+.main-footer {
     background-color: #445161;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.maim-footer-title {
+.main-footer-title {
+    display: block;
+    width: 100%;
     text-align: center;
     font-family: Arial;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
     color: #ffffff;
-}
-.maim-footer-button {
-
+    margin: 0 0 30px 0;
 }
 
+.main-footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 0 46px 0 0;
+}
+
+.name, .email, .message {
+  width: 100%;
+  height: 40px;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color:  #ffffff;
+  outline: none;
+  text-transform: capitalize;
+}
+.main-footer-form textarea {
+  width: 100%;
+  height: 170px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color:  #ffffff;
+  outline: none;
+}
+input[placeholder],
+textarea[placeholder] {
+  text-overflow:ellipsis;
+  font-family: Arial;
+  color:  #445162;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
+.button {
+  border-radius: 5px;
+  background-color:  #ffffff;
+  width: 140px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: Arial;
+  color:  #445162;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  outline: none;
+}
+.button:hover {
+    background-color: yellow;
+}
+.button:active {
+    background-color: green;
+}
+
+.main-footer-content {
+    margin: 0 20px 0 20px;
+    width: 240px;
+    height: 300px;
+}
+.main-footer-content-skype, .main-footer-content-icq, .main-footer-content-email, .main-footer-content-phone {
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.main-footer-content-skype:before{
+    content: "\f17e";
+    font-family: FontAwesome;
+    color: #ffffff;
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.main-footer-content-email:before {
+    content: "\f1fa";
+    font-family: FontAwesome;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.main-footer-content-phone:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    color: #ffffff;
+    margin-right: 10px;
+}
 
 
+.socials {
+    margin-top: 30px;
+}
+.socials-link {
+    text-decoration: none;
+    color: #ffffff;
+}    
 
-
-
-
-
-
-
-
+.copyright {
+    display: block;
+    text-align: center;
+}
 
 
 
